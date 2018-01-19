@@ -1,8 +1,8 @@
 # Mdpdf
+Writting markdown file,it's convert to PDF  
+this mdpdf it can easy markdown file  pdf convert 
+if There was a bug. please issues or pull request  
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/mdpdf`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 

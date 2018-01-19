@@ -35,7 +35,7 @@ module Mdpdf
           </body>
         </html>
       "
-      create_pdf(html)
+      create_pdf(html_template)
     end
 
     def create_pdf(html)

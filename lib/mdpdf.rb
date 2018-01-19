@@ -1,5 +1,5 @@
 require "mdpdf/version"
-require "mdpdf/Md2Pdf"
+require "mdpdf/md2pdf"
 
 module Mdpdf
   # Your code goes here...

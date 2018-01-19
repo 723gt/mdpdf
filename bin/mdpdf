@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'mdpdf'
+
+if ARGV[0].nil?
+  puts "argment error"
+else
+  mdfile_name = ARGV[0]
+end
+
+if ARGV[1].nil?
+  puts "argment error"
+else
+  outpdf_name = ARGV[1]
+end
+
+Mdpdf::Md2Pdf.new(mdfile_name,outpdf_name)

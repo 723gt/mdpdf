@@ -6,6 +6,7 @@ module Mdpdf
     def initialize(mdfile_name,outfile_name = nil)
       @mdfile_name = mdfile_name
       @outfile_name = outfile_name
+      file_read
     end
 
     def file_read
@@ -15,6 +16,7 @@ module Mdpdf
           html_body += c + "\n"
         end
       end
+      creat_md(html_body)
     end
 
     def creat_md(html_body)
@@ -33,6 +35,7 @@ module Mdpdf
           </body>
         </html>
       "
+      create_pdf(html)
     end
 
     def create_pdf(html)

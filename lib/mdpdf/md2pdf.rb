@@ -36,7 +36,7 @@ module Mdpdf
     end
 
     def create_pdf(html)
-      file = open("#{@outfile_name}.pdf","w")
+      file = open("./#{@outfile_name}.pdf","w")
       file.puts PDFKit.new(html,encoding: "UTF-8").to_pdf
       file.close
     end

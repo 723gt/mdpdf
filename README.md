@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`mdpdf markdow_file.md output_pdffilename`
 
 ## Development
 

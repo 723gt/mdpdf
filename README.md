@@ -1,6 +1,6 @@
 # Mdpdf
 Writting markdown file,it's convert to PDF  
-this mdpdf it can easy markdown file  pdf convert 
+this mdpdf it can easy markdown file  pdf convert   
 if There was a bug. please issues or pull request  
 
 

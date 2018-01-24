@@ -2,16 +2,32 @@
 
 require 'mdpdf'
 
-if ARGV[0].nil?
-  puts "argment error"
-else
+def errmsg
+  err_msg = <<-EOS
+  1st argment is MarkDown file name or options \n
+  2nd argment is outs PDF fine name \n
+  OPTION: \n 
+  -v => version \n
+  -h => help\n
+  EOS
+
+  STDERR.print  err_msg
+end
+
+if ARGV.length == 2
   mdfile_name = ARGV[0]
-end
-
-if ARGV[1].nil?
-  puts "argment error"
-else
   outpdf_name = ARGV[1]
+elsif ARGV.length == 1
+  argv = ARGV[0]
+  case argv
+  when '-v'
+    puts "mdpdf version is #{Mdpdf::VERSION} "
+  when '-h'
+    errmsg
+  else
+    errmsg
+  end
+else
+  errmsg
 end
 
-Mdpdf::Md2Pdf.new(mdfile_name,outpdf_name)

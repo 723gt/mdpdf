@@ -20,7 +20,7 @@ module Mdpdf
     end
 
     def creat_md(html_body)
-      markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :tables => true, :autolink => true) 
+      markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :tables => true, :autolink => true,:fenced_code_blocks => true) 
       body = markdown.render(html_body) 
       html_template = "
         <!DOCTYP html>

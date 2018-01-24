@@ -17,6 +17,7 @@ end
 if ARGV.length == 2
   mdfile_name = ARGV[0]
   outpdf_name = ARGV[1]
+  Mdpdf::Md2Pdf.new(mdfile_name,outpdf_name)
 elsif ARGV.length == 1
   argv = ARGV[0]
   case argv

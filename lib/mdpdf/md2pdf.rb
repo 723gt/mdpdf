@@ -23,12 +23,11 @@ module Mdpdf
       markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :tables => true, :autolink => true,:fenced_code_blocks => true) 
       body = markdown.render(html_body) 
       html_template = "
-        <!DOCTYP html>
+        <!DOCTYPE html>
         <html>
           <head>
             <meta charset='UTF-8'>
             <title>#{@outfile_name}</title>
-            <link rel='stylesheet' type='text/css' href='github.css'>
           </head>
           <body>
             #{body}
